@@ -25,6 +25,15 @@ test_feeder_args:
   vel: False
   bone: False
   debug: False
+  random_miss: True
+  random_miss_type: 'delete' # delete, drop_next, drop_previous or interpolate
+  miss_amount: 0.9
+  structured_miss: False
+  structured_miss_type: 'frame_rate' # 'frame_rate' or 'reduced_resolution'
+  structured_res: 10
+  chunks: 1 
+  FPS: 3
+  mitigation: True
 
 # model
 model: model.ctrgcn.Model
